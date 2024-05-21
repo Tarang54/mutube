@@ -3,6 +3,9 @@ import {DB_NAME} from "./constants"
 import express from "express";
 const app = express();
 
+
+
+/*
 (async () => {
     try{
         await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
@@ -19,3 +22,4 @@ const app = express();
         throw err
     }
 })()
+*/
