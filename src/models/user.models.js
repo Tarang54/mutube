@@ -50,9 +50,9 @@ const userSchema = new Schema({
     timestamps: true
 })
 
-//we dont write ()=> in callback of pre as it creates problem due to access of all the parameters
+//we dont write ()=> in callback of pre as it creates problem due to its access to all the parameters
 //also we use next here as it is a middleware
-userSchema.pre("save", async function (next) {
+userSchema.pre("save", async function (next) { // pre is a middleware which does a job just before a particular event - here save
     if(!this.isModified("password")) return next();
     this.password = bcrypt.hash(this.password,10) // this will encrypt the password
     next()
