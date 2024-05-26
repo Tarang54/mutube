@@ -6,3 +6,5 @@ Notes
 - Use of jsonwebtoken - can encrypt payload and we can use secret
   can visit websit jwt.io for tokens
  jwt is a bearer token - a key
+
+For uploading file, we have used multer
