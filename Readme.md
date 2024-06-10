@@ -1,3 +1,4 @@
+This project is 50% complete.
 This is a fully functional youtube alternative.
 
 
